@@ -29,7 +29,8 @@ new Vue({
 (function ($){
   "use strict";
   $(document).ready(function () {
-    $('#toggle').click(function() {
+    $('#toggle').click(function(e) {
+      e.preventDefault();
     $('.search').toggleClass('reveal');
     });
   });
