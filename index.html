@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Test Frontend</title>
+		<link rel="stylesheet" type="text/css" href="asset/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="asset/css/style.css">
+		<link rel="stylesheet" type="text/css" href="asset/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="asset/css/animate.css">
+	</head>
+	<body>
+		<div class="top pt-20 pb-20">
+			<div class="container">
+						<div class="col-md-12">
+							<h5 style="text-align:center;">
+							the most delicious jobs for designers
+							</h5>
+						</div>
+						<div class="col-md-4 search-wrapper">
+							<a href="#" id="toggle"><i class="fa fa-search"></i></a>
+							<div class="search">
+								<input type="text" name="search" placeholder="search">
+							</div>
+						</div>
+			</div>
+		</div>
+		<!-- end top -->
+		<div id="jobDesigner">
+			<div class="container">
+					<div class="row">
+						<div v-for="item in items" class="col-md-4 mb-30">
+							<div class="box clearfix">
+								<div class="col-md-6">
+								<div class="image">
+									<img :src="item.image" :alt="item.company">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="text">
+									<h4>{{ item.job }}</h4>
+									<p>{{ item.company }}</p>
+									<p>{{ item.address }}</p>
+								</div>
+							</div>
+							</div>
+							
+						</div>
+					</div>
+			</div>
+		</div>
+		<!-- end middle -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<!-- <script type="text/javascript" src="asset/js/jquery.js"></script> -->
+		<script type="text/javascript" src="asset/js/main.js"></script>
+	</body>
+</html>
